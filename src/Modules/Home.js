@@ -2,10 +2,14 @@ import Header from "../commonComponent/Header/Header";
 import Carousal from './../Components/Carousal/Carousal';
 import FoodCard from "../Components/foodCard/FoodCard";
 import FoodProducts from "../Components/foodProducts/FoodProducts";
+import FooterCard from "../Components/footerCard/FooterCard";
+import FooterCard2 from "../Components/footerCard/FooterCard2";
+import Footer from "../commonComponent/Footer/Footer";
 import { Container,Row,Col  } from "react-bootstrap";
 import Review  from "../Assets/review.png";
 import Sharewithfriends from "../Assets/share-with-friends.png"
 import ReferFriend from "../Assets/refer-friend.png"
+import cashback from "../Assets/cashback.png"
 import img4 from "../Assets/img4.jpg"
 import img5 from "../Assets/img5.jpg"
 import img6 from "../Assets/img6.jpg"
@@ -33,8 +37,8 @@ export default function Home() {
   </Row>
   <hr/>
   <Row>
-      <Col lg={4} md={4}>            <FoodCard title="Upto 30% Instant CashBack" src={Review}/></Col>
-      <Col lg={4} md={4}>            <FoodCard title="Share/Review for instant cash"  src={Sharewithfriends}/></Col>
+      <Col lg={4} md={4}>            <FoodCard title="Upto 30% Instant CashBack" src={cashback}/></Col>
+      <Col lg={4} md={4}>            <FoodCard title="Share/Review for instant cash"  src={Review}/></Col>
       <Col lg={4} md={4}>            <FoodCard title='Get instant cashback each time your friends order'  src={ReferFriend}/></Col>
   </Row>
   <hr/>
@@ -67,12 +71,31 @@ export default function Home() {
    
 </Row>
 <hr/>
+
 <Row>
-  <Col lg={6} md={6}><img style={{width:"400px",height:"250px",marginLeft:"20%",marginTop:"10%"}} src={img14}/></Col>
-  <Col  lg={6} md={6}><h1 style={{marginTop:"23%"}}>ORDER ONLINE</h1><p>From hundreds of restaurants in your city</p></Col>
+  <Col></Col>
+  <Col  lg={5} md={6} sm={12}><img style={{marginLeft:"10%",marginTop:"10%"}} src={img14}/></Col> 
+  <Col  lg={6} md={5} sm={12}><h1 style={{marginTop:"23%",}}>ORDER ONLINE</h1><p style={{}}>From hundreds of restaurants in your city</p></Col>
+
 </Row>
 
+<Container fluid style={{paddingLeft:"10%",paddingRight:"10%",position:"relative",top:"130px"}}>
+<Row>
+  <Col lg={6} md={6} sm={12}><FooterCard/> </Col>
+  <Col  lg={6} md={6} sm={12}><FooterCard2/></Col>
+</Row>
 </Container>
+
+<Container fluid style={{backgroundColor:"black",height:"800px"}}>
+  <Row>
+    <Col><Footer/></Col>
+  </Row>
+</Container>
+
+</Container>
+
+
+
           
            
 

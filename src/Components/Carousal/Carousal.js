@@ -10,6 +10,7 @@ export default function Carousal() {
       className="d-block w-90"
       src={img1}
       alt="First slide"
+      style={{ height:"720px", width:"1920px"}}
     />
     <Carousel.Caption>
       {/* <h5>First slide label</h5>
@@ -21,7 +22,7 @@ export default function Carousal() {
       className="d-block w-90"
       src={img2}
       alt="Second slide"
-      style={{ height:"640px", width:"1500px"}}
+      style={{ height:"720px", width:"1920px"}}
     />
     <Carousel.Caption>
       {/* <h5>Second slide label</h5>

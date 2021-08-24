@@ -6,6 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import PhoneIcon from '@material-ui/icons/Phone';
 
+
 export default function Header() {
     return(
     <>
@@ -31,7 +32,7 @@ export default function Header() {
     <PersonIcon/>
     
       </Nav.Link>
-      <Nav.Link href="#memes">
+      <Nav.Link href="#">
     <SearchIcon/>
     
       </Nav.Link>
