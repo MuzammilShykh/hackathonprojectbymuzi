@@ -12,13 +12,13 @@ export default function Header() {
     <>
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
-  <Navbar.Brand  href="#home">Company Logo </Navbar.Brand>
+  <Navbar.Brand  href="/">Company Logo </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link style={{marginLeft:"90%",color:"#E8AB16"}} href="#Home">Home</Nav.Link>
-      <Nav.Link href="#About Us">About</Nav.Link>
-      <Nav.Link href="#Contact">Contact</Nav.Link>
+      <Nav.Link style={{marginLeft:"90%",color:"#E8AB16"}} href="/">Home</Nav.Link>
+      <Nav.Link href="/aboutus">About</Nav.Link>
+      <Nav.Link href="/contact">Contact</Nav.Link>
       <NavDropdown title="Blog" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Blog with SideBar</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Blog without SideBar</NavDropdown.Item>
@@ -28,7 +28,7 @@ export default function Header() {
     
     </Nav>
     <Nav>
-    <Nav.Link href="#memes">
+    <Nav.Link href="/login">
     <PersonIcon/>
     
       </Nav.Link>

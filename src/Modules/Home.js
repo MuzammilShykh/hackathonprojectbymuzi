@@ -27,10 +27,10 @@ export default function Home() {
     return (
         <>
         <Container fluid>
-  <Row>
+  {/* <Row>
     <Col><Header /></Col>
    
-  </Row>
+  </Row> */}
   <Row>
     <Col> <Carousal /></Col>
    
@@ -86,11 +86,11 @@ export default function Home() {
 </Row>
 </Container>
 
-<Container fluid style={{backgroundColor:"black",height:"800px"}}>
+{/* <Container fluid style={{backgroundColor:"black",height:"800px"}}>
   <Row>
     <Col><Footer/></Col>
   </Row>
-</Container>
+</Container> */}
 
 </Container>
 
