@@ -3,7 +3,9 @@ import Header from "../commonComponent/Header/Header";
 import Footer from "../commonComponent/Footer/Footer";
 import Login from "../Components/loginSignup/Login";
 import SignUp from "../Components/loginSignup/SignUp";
-
+import PrivateRouting from "./PrivateRouting";
+import PublicRouting from "./PublicRouting";
+import { useSelector } from "react-redux";
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,25 +14,40 @@ import {
 } from "react-router-dom";
 
 export default function Navigation(params) {
+
+  const authState = useSelector(state => state.AuthReducer.isUserLoggedIn)
+  console.log(authState);
     return(
+
 <Router>
     <Header/>
     <Switch>
-        <Route exact path="/">
+        <PrivateRouting exact path="/" auth={authState}>
         <Home/>
-        </Route>
-        <Route path="/aboutus">
+        </PrivateRouting>
+
+
+        <PrivateRouting path="/aboutus" auth={authState}>
        <h1>ABOUT US</h1>
-        </Route>
-        <Route path="/contact">
+        </PrivateRouting>
+
+
+
+        <PrivateRouting path="/contact" auth={authState}>
        <h1>Contact Us</h1>
-        </Route>
-        <Route path="/login">
+        </PrivateRouting>
+
+
+
+
+        <PublicRouting path="/login"  auth={authState}>
       <Login/>
-        </Route>
-        <Route path="/signup">
+        </ PublicRouting>
+
+
+        <PublicRouting path="/signup"  auth={authState}>
        <SignUp/>
-        </Route>
+        </PublicRouting>
     </Switch>
     <Footer/>
 </Router>
