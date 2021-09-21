@@ -7,6 +7,7 @@ import Help from "../Modules/Help";
 import PrivateRouting from "./PrivateRouting";
 import PublicRouting from "./PublicRouting";
 import { useSelector } from "react-redux";
+import AddRestaurant from "../Modules/AddRestaurant";
 import {
   BrowserRouter as Router,
   Switch,
@@ -49,6 +50,12 @@ export default function Navigation(params) {
         <PublicRouting path="/signup"  auth={authState}>
        <SignUp/>
         </PublicRouting>
+        <PrivateRouting path="/addrestaurant"  auth={authState}>
+       <AddRestaurant/>
+        </PrivateRouting>
+
+
+
     </Switch>
     <Footer/>
 </Router>

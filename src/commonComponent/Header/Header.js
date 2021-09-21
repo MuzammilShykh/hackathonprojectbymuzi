@@ -42,7 +42,7 @@ export default function Header() {
               <NavLink style={{textDecoration:"none",color: "#939597",paddingRight:"10%"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} exact to="/"> Home </NavLink>
               <NavLink style={{textDecoration:"none",color: "#939597",paddingRight:"10%"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} to ="/aboutus"> About </NavLink>
               
-              <NavLink  style={{textDecoration:"none",color: "#939597"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} to="/faq"> Help </NavLink>
+              <NavLink  style={{textDecoration:"none",color: "#939597"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} to="/faq"> Help </NavLink> 
              
               {/* <NavDropdown title="Blog" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Blog with SideBar</NavDropdown.Item>                         
@@ -52,9 +52,12 @@ export default function Header() {
               </NavDropdown> */}
 
             </Nav>
+            <NavLink style={{textDecoration:"none",color: "#939597",paddingRight:"5%"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} exact to="addrestaurant"> I am a Restaurant </NavLink>
             <Nav>
 
               {/* <Nav.Link to ="/login"> */}
+
+             
 
               {authState ? <button style={{ color: "#E8AB16", backgroundColor: "#212529" }} onClick={doUserLogout}>Logout Now</button> : <NavLink  style={{textDecoration:"none",color: "#939597",paddingTop:"3%"}} to="/login">   <PersonIcon /> </NavLink>}
 
@@ -71,6 +74,7 @@ export default function Header() {
                 <PhoneIcon /> <a style={{ color: "#E8AB16" }}>0000-000000-0</a>
               </Nav.Link>
             </Nav>
+            
           </Navbar.Collapse>
         </Container>
       </Navbar>
