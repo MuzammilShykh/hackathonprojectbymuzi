@@ -10,7 +10,7 @@ export default function Carousal() {
       className="d-block w-90"
       src={img1}
       alt="First slide"
-      style={{ height:"720px", width:"1920px"}}
+      style={{ height:"720px", width:"1900px"}}
     />
     <Carousel.Caption>
       {/* <h5>First slide label</h5>

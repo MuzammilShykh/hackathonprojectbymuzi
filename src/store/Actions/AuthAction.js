@@ -9,12 +9,15 @@ export const doLogin = (email, password) => async (dispatch) => {
 
     const userCredential = await auth.signInWithEmailAndPassword(email, password);
     var user = userCredential.user;
+   
     console.log("user", user.uid);
     dispatch({
       type:AUTH_LOGIN,
       payload: user,
+
     });
   } catch (error) {
+    
       alert(JSON.stringify(error))
     console.log("error", error);
   }

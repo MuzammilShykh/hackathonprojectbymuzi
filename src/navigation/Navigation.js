@@ -3,6 +3,7 @@ import Header from "../commonComponent/Header/Header";
 import Footer from "../commonComponent/Footer/Footer";
 import Login from "../Components/loginSignup/Login";
 import SignUp from "../Components/loginSignup/SignUp";
+import Help from "../Modules/Help";
 import PrivateRouting from "./PrivateRouting";
 import PublicRouting from "./PublicRouting";
 import { useSelector } from "react-redux";
@@ -22,9 +23,9 @@ export default function Navigation(params) {
 <Router>
     <Header/>
     <Switch>
-        <PrivateRouting exact path="/" auth={authState}>
+        <Route exact path="/">
         <Home/>
-        </PrivateRouting>
+        </Route>
 
 
         <PrivateRouting path="/aboutus" auth={authState}>
@@ -33,8 +34,8 @@ export default function Navigation(params) {
 
 
 
-        <PrivateRouting path="/contact" auth={authState}>
-       <h1>Contact Us</h1>
+        <PrivateRouting path="/faq" auth={authState}>
+       <Help/>
         </PrivateRouting>
 
 

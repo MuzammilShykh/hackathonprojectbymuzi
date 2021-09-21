@@ -1,9 +1,10 @@
 import Header from "../commonComponent/Header/Header";
-import Carousal from './../Components/Carousal/Carousal';
+import Carousal from '../Components/Carousal/Carousal';
 import FoodCard from "../Components/foodCard/FoodCard";
 import FoodProducts from "../Components/foodProducts/FoodProducts";
 import FooterCard from "../Components/footerCard/FooterCard";
 import FooterCard2 from "../Components/footerCard/FooterCard2";
+import FoodCard2 from "../Components/foodCard2/FoodCard2";
 import Footer from "../commonComponent/Footer/Footer";
 import { Container,Row,Col  } from "react-bootstrap";
 import Review  from "../Assets/review.png";
@@ -21,8 +22,10 @@ import img11 from "../Assets/img11.jpg"
 import img12 from "../Assets/img12.jpg"
 import img13 from "../Assets/img13.jpg"
 import img14 from "../Assets/img14.png"
-
-
+import Faisalabad from "../Assets/cities & restourants/Faisalabad.jpg";
+import Lahore from "../Assets/cities & restourants/Lahore.jpg";
+import Karachi from "../Assets/cities & restourants/Karachi.jpg";
+import Islamabad from "../Assets/cities & restourants/Islamabad.jpg";
 export default function Home() {
     return (
         <>
@@ -32,7 +35,7 @@ export default function Home() {
    
   </Row> */}
   <Row>
-    <Col> <Carousal /></Col>
+    <Col sm={12} lg={12} md={12}> <Carousal /></Col>
    
   </Row>
   <hr/>
@@ -40,6 +43,16 @@ export default function Home() {
       <Col lg={4} md={4}>            <FoodCard title="Upto 30% Instant CashBack" src={cashback}/></Col>
       <Col lg={4} md={4}>            <FoodCard title="Share/Review for instant cash"  src={Review}/></Col>
       <Col lg={4} md={4}>            <FoodCard title='Get instant cashback each time your friends order'  src={ReferFriend}/></Col>
+  </Row>
+  <hr/>
+  <Row>
+      <Col> <div style={{textAlign:"center"}}> 
+          <h1>Find Us in these cities and many more!</h1> <br/> </div>
+          <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}} >
+          <FoodCard2 cityName="Faisalabad" image={Faisalabad}/>  <FoodCard2 cityName="Lahore" image={Lahore}/>  <FoodCard2 cityName="Karachi" image={Karachi}/>  <FoodCard2 cityName="Islamabad" image={Islamabad}/> 
+          </div>
+          </Col>
+
   </Row>
   <hr/>
   <Row>

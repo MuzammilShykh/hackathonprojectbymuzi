@@ -7,6 +7,7 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import PhoneIcon from '@material-ui/icons/Phone';
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { useState } from "react";
 import { doLogout } from '../../store/Actions/AuthAction'
 
 import {
@@ -24,25 +25,27 @@ export default function Header() {
     console.log("button is workking");
     dispatch(doLogout())
   }
-
+ 
   const authState = useSelector(state => state.AuthReducer.isUserLoggedIn)
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/">Company Logo </Navbar.Brand>
+          <Navbar.Brand href="/">Company Logo | </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
+
               {/* <Nav.Link style={{ marginLeft: "90%", color: "#E8AB16" }}>Home</Nav.Link> */}
               {/* <Nav.Link to="/aboutus">About</Nav.Link> */}
 
-              <NavLink style={{textDecoration:"none",color: "#939597"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} exact to="/"> Home </NavLink>
-              <NavLink style={{textDecoration:"none",color: "#939597"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} to="/aboutus"> About </NavLink>
-              <NavLink  style={{textDecoration:"none",color: "#939597"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} to="/contact"> Contact </NavLink>
-           
+              <NavLink style={{textDecoration:"none",color: "#939597",paddingRight:"10%"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} exact to="/"> Home </NavLink>
+              <NavLink style={{textDecoration:"none",color: "#939597",paddingRight:"10%"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} to ="/aboutus"> About </NavLink>
+              
+              <NavLink  style={{textDecoration:"none",color: "#939597"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} to="/faq"> Help </NavLink>
+             
               {/* <NavDropdown title="Blog" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Blog with SideBar</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Blog with SideBar</NavDropdown.Item>                         
                 <NavDropdown.Item href="#action/3.2">Blog without SideBar</NavDropdown.Item>
 
 
@@ -53,7 +56,7 @@ export default function Header() {
 
               {/* <Nav.Link to ="/login"> */}
 
-              {authState ? <button style={{ color: "#E8AB16", backgroundColor: "#212529" }} onClick={doUserLogout}>Logout Now</button> : <Link to="/login">   <PersonIcon /> </Link>}
+              {authState ? <button style={{ color: "#E8AB16", backgroundColor: "#212529" }} onClick={doUserLogout}>Logout Now</button> : <NavLink  style={{textDecoration:"none",color: "#939597",paddingTop:"3%"}} to="/login">   <PersonIcon /> </NavLink>}
 
 
               {/* </Nav.Link> */}
