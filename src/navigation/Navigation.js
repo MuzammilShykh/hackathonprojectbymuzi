@@ -8,6 +8,7 @@ import PrivateRouting from "./PrivateRouting";
 import PublicRouting from "./PublicRouting";
 import { useSelector } from "react-redux";
 import AddRestaurant from "../Modules/AddRestaurant";
+import Faisalabad from "../Modules/cities/Faisalabad";
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,7 +28,9 @@ export default function Navigation(params) {
         <Route exact path="/">
         <Home/>
         </Route>
-
+        <Route path="/city/faisalabad">
+       <Faisalabad/>
+        </Route>
 
         <PrivateRouting path="/aboutus" auth={authState}>
        <h1>ABOUT US</h1>
