@@ -1,5 +1,5 @@
-import  img1  from "../../Assets/img1.jpg";
-import  img2  from "../../Assets/img2.jpg";
+import  img1  from "../../Assets/sliderimg2.jpg";
+import  img2  from "../../Assets/sliderimg.jpg";
 import {Carousel} from 'react-bootstrap'
 export default function Carousal() {
     return(
@@ -7,10 +7,10 @@ export default function Carousal() {
         <Carousel variant="dark">
   <Carousel.Item>
     <img
-      className="d-block w-90"
+      className="d-block w-100"
       src={img1}
       alt="First slide"
-      style={{ height:"720px", width:"1900px"}}
+      style={{ height:"auto", width:"auto"}}
     />
     <Carousel.Caption>
       {/* <h5>First slide label</h5>
@@ -19,10 +19,10 @@ export default function Carousal() {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-90"
+      className="d-block w-100"
       src={img2}
       alt="Second slide"
-      style={{ height:"720px", width:"1920px"}}
+      style={{ height:"auto", width:"auto"}}
     />
     <Carousel.Caption>
       {/* <h5>Second slide label</h5>

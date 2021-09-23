@@ -6,10 +6,10 @@ import {db} from "../../config/Firebase"
 
 
 
-export const FetchRestaurant = () => async (dispatch,previousState) => {
+export const FetchRestaurant = (setLoading) => async (dispatch,previousState) => {
     try {
       // Fetch Restaurants
-  
+      setLoading(true);
       let snapshot = await db.collection("Restaurants").get();
 
      let restaurantsArray= []
@@ -31,5 +31,9 @@ export const FetchRestaurant = () => async (dispatch,previousState) => {
         // alert(JSON.stringify(error))
       console.log("error", error);
     }
+    finally
+  {
+    setLoading(false);
+  }
   };
   

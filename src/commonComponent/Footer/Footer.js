@@ -3,7 +3,7 @@ import { Container,Row,Col  } from "react-bootstrap";
 export default function Footer() {
     return(
         <>
-        <Container fluid style={{backgroundColor:"#212529",height:"750px"}}>
+        <Container fluid style={{backgroundColor:"#212529",height:"auto"}}>
 
 <Container  style={{paddingTop:"16%"}}>
     <Row>
@@ -151,14 +151,15 @@ export default function Footer() {
         <Col></Col>
     </Row>
 
-</Container>
+    </Container>
 <hr style={{color:"#fff",opacity:"100%"}}/>
 <Container>
     <Row>
-        <Col><p style={{color:"#fff"}}>© 2021 Company Name. All rights reserved. Terms and Conditions- Privacy Policy</p></Col>
+        <Col sm={12} md={12} lg={12}><p style={{color:"#fff"}}>© 2021 Company Name. All rights reserved. Terms and Conditions- Privacy Policy</p></Col>
 
     </Row>
 </Container>
+
 </Container>
         </>
     )

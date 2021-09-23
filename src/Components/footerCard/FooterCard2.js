@@ -4,7 +4,7 @@ import { Container,Row,Col,NavLink} from "react-bootstrap";
 export default function FooterCard2(){
     return(
 <>
-<Container style={{backgroundColor:"#FFDD33",height:"250px",width:"100%"}}>
+<Container style={{backgroundColor:"#FFDD33",height:"250px",width:"100%",position:"relative",top:"100px"}}>
     <Row>
         
         <Col lg={12} md={12} sm={12}>

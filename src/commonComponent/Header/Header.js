@@ -52,14 +52,14 @@ export default function Header() {
               </NavDropdown> */}
 
             </Nav>
-            <NavLink style={{textDecoration:"none",color: "#939597",paddingRight:"5%"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} exact to="addrestaurant"> I am a Restaurant </NavLink>
+            <NavLink style={{textDecoration:"none",color: "#939597",paddingRight:"4%"}} activeStyle={{fontWeight: "",textDecoration:"none",color: "#E8AB16"}} exact to="addrestaurant"> I am a Restaurant </NavLink>
             <Nav>
 
               {/* <Nav.Link to ="/login"> */}
 
              
 
-              {authState ? <button style={{ color: "#E8AB16", backgroundColor: "#212529" }} onClick={doUserLogout}>Logout Now</button> : <NavLink  style={{textDecoration:"none",color: "#939597",paddingTop:"3%"}} to="/login">   <PersonIcon /> </NavLink>}
+              {authState ? <button style={{ color: "#E8AB16", backgroundColor: "#212529",width:"150px"  }} onClick={doUserLogout}>Logout Now</button> : <NavLink  style={{textDecoration:"none",color: "#939597",paddingTop:"3%"}} to="/login"> <button style={{ color: "#E8AB16", backgroundColor: "#212529" ,width:"150px" }}>Login</button> </NavLink>}
 
 
               {/* </Nav.Link> */}

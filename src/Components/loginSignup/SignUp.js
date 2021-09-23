@@ -9,10 +9,10 @@ import {
   export default function SignUp() {
     const [setEmail,setPassword,doSignupUser] = UseSignup()
       return(
-        <div style={{backgroundColor:"#212529"}}>
+        <div style={{backgroundColor:"#212529",paddingTop:"5%"}}>
   
        
-          <div style={{paddingTop:"5%",marginLeft:"40%",height:"700px",width:"20%",borderStyle:"groove",borderColor:"#E89E22",borderRadius:"5%"}}>
+          <div style={{paddingBottom:"5%",paddingTop:"5%",height:"auto",width:"auto",borderStyle:"groove",borderColor:"#E89E22",borderRadius:"5%",maxWidth:"650px",marginLeft:"auto",marginRight:"auto"}}>
           <h1 style={{color:"#E89E22",textAlign:"center"}}>SIGN UP</h1>
 
   <Form style={{paddingLeft:"5%",paddingRight:"5%"}}>
