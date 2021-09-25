@@ -5,6 +5,8 @@ import {db} from "../config/Firebase"
 export default function AddRestaurant() {
 const [restaurantName,setRestaurantName] = useState('')
 const [categories,setCategories] = useState('')
+const [ownerName,setOwnerName] = useState('')
+const [cityName,setCityName] = useState('')
 const [successMsg,setSuccessMsg] = useState('')
 const [uploadError,setUploadError] = useState('')
 const [imageError,setImageError] = useState('')
@@ -40,11 +42,15 @@ const handleAddRestaurant =(e)=>{
             db.collection('Restaurants').add({
                 restaurantName,
                 categories,
+                cityName,
+                ownerName,
                 url
             }).then(()=>{
                 setSuccessMsg('Product added successfully')
                 setRestaurantName('');
                 setCategories('');
+                setCityName('');
+                setOwnerName('');
                 document.getElementById("file").value='';
                 setImageError('');
                 setUploadError('')
@@ -76,6 +82,27 @@ const handleAddRestaurant =(e)=>{
                 <input type="text" className='form-control' required
                 onChange={(e)=>setRestaurantName(e.target.value)} value={restaurantName}></input>
                 <br></br>
+                <label>Owner Name</label>
+                <input type="text" className='form-control' required
+                onChange={(e)=>setOwnerName(e.target.value)} value={ownerName}></input>
+                <br></br>
+
+                {/* <label>City</label>
+                <input type="text" className='form-control' required
+                onChange={(e)=>setCategories(e.target.value)} value={city}></input> */}
+
+<label for="cities">Choose a City:</label> 
+<select style={{marginLeft:"2%"}} required  id="cities" name="cities" value={cityName}  onChange={(e)=>setCityName(e.target.value)}>
+ <option  selected disabled value="Select City">Select City</option>
+  <option    value="Faisalabad">Faisalabad</option>
+  <option  value="Lahore">Lahore</option>
+  <option  value="Islamabad">Islamabad</option>
+  <option  value="Karachi">Karachi</option>
+</select>
+
+
+
+                <br/>  <br/>
                 <label>Food Categories</label>
                 <input type="text" className='form-control' required
                 onChange={(e)=>setCategories(e.target.value)} value={categories}></input>

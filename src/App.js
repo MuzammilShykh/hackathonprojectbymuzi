@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Home from "./Modules/Home";
 import Navigation from "./navigation/Navigation";
 

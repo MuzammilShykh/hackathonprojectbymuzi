@@ -9,12 +9,12 @@ import { useEffect,useState } from "react";
 
 import RestaurantCard  from "../../Components/restaurantCards/RestaurantCard";
 
-export default function Faisalabad() {
+export default function Lahore() {
 
 const [loading,setLoading]=useState(false)
 
     const res = useSelector(state => state.RestaurantReducer.restaurantsArray)
-    console.log("data in component",res);
+   
     
 const dispatch = useDispatch()
 
@@ -41,7 +41,7 @@ dispatch(FetchRestaurant(setLoading))
 
                 {
 res.map((item)=>{
-    if (item.cityName == "Faisalabad") {
+    if (item.cityName == "Lahore") {
         return(
         
             <Col xs={12} sm={12} lg={3} md={3}>
