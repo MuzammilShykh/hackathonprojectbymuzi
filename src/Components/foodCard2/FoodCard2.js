@@ -9,28 +9,46 @@ const [to,setTo] = useState("")
     console.log(item.item.cityName);
     const ctaHandler= ()=>{
       
+switch (item.item.cityName) {
+  case "Faisalabad":
+    setTo("/faisalabad")
+    break;
+    case "Lahore":
+      setTo("/lahore")
+      break;
+      case "Karachi":
+        setTo("/karachi")
+        break;
+        case "Islamabad":
+          setTo("/islamabad")
+          break;
+  default:
+    break;
+}
 
-        if (item.item.cityName == "Faisalabad") {
-      setTo("city/faisalabad")
-        } 
-        else if (
-          item.item.cityName == "Lahore"
-        )
-        {
-            setTo ("city/lahore")
-        }
-        else if (
-          item.item.cityName == "Karachi"
-        )
-        {
-            setTo ("city/karachi")
-        }
-        else
+
+
+    //     if (item.item.cityName == "Faisalabad") {
+    //   setTo("/faisalabad")
+    //     } 
+    //     else if (
+    //       item.item.cityName == "Lahore"
+    //     )
+    //     {
+    //         setTo ("/lahore")
+    //     }
+    //     else if (
+    //       item.item.cityName == "Karachi"
+    //     )
+    //     {
+    //         setTo ("/karachi")
+    //     }
+    //     else
            
-        {
-            setTo ("city/islamabad")
-        }
-    }
+    //     {
+    //         setTo ("/islamabad")
+    //     }
+     }
    
   return (
     

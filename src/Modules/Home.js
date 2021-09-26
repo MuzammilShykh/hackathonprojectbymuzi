@@ -33,15 +33,17 @@ let cityArr = [{cityName:"Faisalabad", image:Faisalabad},{cityName:"Lahore", ima
 
     return (
         <>
+
+<Carousal />
         <Container fluid>
   {/* <Row>
     <Col><Header /></Col>
    
   </Row> */}
-  <Row>
-    <Col sm={12} lg={12} md={12}> <Carousal /></Col>
+  
    
-  </Row>
+   
+  
   <hr/>
   <Row>
       <Col lg={4} md={4}>            <FoodCard title="Upto 30% Instant CashBack" src={cashback}/></Col>
