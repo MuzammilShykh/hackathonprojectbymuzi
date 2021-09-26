@@ -10,7 +10,7 @@ import { useEffect,useState } from "react";
 import RestaurantCard  from "../../Components/restaurantCards/RestaurantCard";
 
 export default function Faisalabad() {
-
+let sliderArr = [{sliderHeader:"",}]
 const [loading,setLoading]=useState(false)
 
     const res = useSelector(state => state.RestaurantReducer.restaurantsArray)
@@ -26,9 +26,16 @@ dispatch(FetchRestaurant(setLoading))
 },[])
 
 
+
     return(
         <>
-        <Carousal/>
+
+            <Carousal cityName= "Faisalabad"/>
+            
+    
+   
+
+      
         <Container>
 
             <Row>

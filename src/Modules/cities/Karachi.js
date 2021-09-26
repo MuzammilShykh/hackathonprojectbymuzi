@@ -27,7 +27,7 @@ dispatch(FetchRestaurant(setLoading))
 
     return(
         <>
-        <Carousal/>
+        <Carousal cityName= "Karachi"/>
         <Container>
 
             <Row>

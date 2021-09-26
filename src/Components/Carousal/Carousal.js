@@ -1,7 +1,8 @@
-import  img1  from "../../Assets/sliderimg2.jpg";
-import  img2  from "../../Assets/sliderimg.jpg";
+import  img1  from "../../Assets/imgbanner3.jpg";
+import  img2  from "../../Assets/imgbanner4.jpg";
 import {Carousel} from 'react-bootstrap'
-export default function Carousal() {
+export default function Carousal(props) {
+console.log(props.cityName);
     return(
         <>
         <Carousel variant="dark">
@@ -12,9 +13,9 @@ export default function Carousal() {
       alt="First slide"
       style={{ height:"auto", width:"auto"}}
     />
-    <Carousel.Caption>
-      {/* <h5>First slide label</h5>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+    <Carousel.Caption style={{marginBottom:"15%",textAlign:"left"}}>
+      <h1 style={{fontSize:"300%",fontWeight:"300",color:"#fff"}}>Food Delivery from <span  style={{fontWeight:"700",paddingRight:"0px"}}> {props.cityName}</span>'s  Best <br/>Restaurants</h1>
+      <br/><p style={{fontWeight:"500",fontSize:"24px",lineHeight:"24px",color:"#fff"}}>The meals you love, delivered with care</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -24,9 +25,9 @@ export default function Carousal() {
       alt="Second slide"
       style={{ height:"auto", width:"auto"}}
     />
-    <Carousel.Caption>
-      {/* <h5>Second slide label</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+    <Carousel.Caption style={{marginBottom:"15%",textAlign:"left"}}>
+      <h1 style={{fontSize:"300%",fontWeight:"300",color:"#fff"}}>Food Delivery from <span  style={{fontWeight:"700",paddingRight:"0px"}}> {props.cityName} </span>'s  Best <br/>Restaurants</h1>
+      <br/><p style={{fontWeight:"500",fontSize:"24px",color:"#fff"}}>The meals you love, delivered with care</p>
     </Carousel.Caption>
   </Carousel.Item>
   

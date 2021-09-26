@@ -27,7 +27,7 @@ dispatch(FetchRestaurant(setLoading))
 
     return(
         <>
-        <Carousal/>
+        <Carousal cityName= "Islamabad"/>
         <Container>
 
             <Row>
@@ -104,11 +104,11 @@ res.map((item)=>{
 
        <h1  style={{fontWeight:"700" ,fontSize:"32px",color:"#333333"}}>Top Restaurants of Islamabad include…</h1>
        <p style={{fontWeight:"300" ,fontSize:"14px"}}>
-       ✓ 14th Street Pizza: One of the best places for pizzas In Islamabad
-✓ KFC : Classic and beloved fried chicken
-✓ The New Yorker Pizza – another favourite of the city’s pizza lovers
-✓ McDonald's – needs no introduction and offers something for everyone
-✓ Char Grill Centre(CGC): Comfort food that everyone adores!
+       ✓ 14th Street Pizza: One of the best places for pizzas In Islamabad  <br/>
+✓ KFC : Classic and beloved fried chicken <br/>
+✓ The New Yorker Pizza – another favourite of the city’s pizza lovers <br/>
+✓ McDonald's – needs no introduction and offers something for everyone <br/>
+✓ Char Grill Centre(CGC): Comfort food that everyone adores! <br/>
 
 
        </p>
