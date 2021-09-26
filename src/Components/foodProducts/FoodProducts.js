@@ -5,7 +5,7 @@ export default function FoodProducts(props) {
 
 <>
 <div style={{textAlign:"center"}}>
-<Card style={{ width: '18rem',borderStyle:"none",marginTop:"5%",marginLeft:"auto",marginRight:"auto"}}>
+<Card style={{ width: '18rem',borderStyle:"none",marginTop:"5%",marginLeft:"auto",marginRight:"auto",marginBottom:"2%"}}>
 <Card.Title style={{fontSize:"24px",marginBottom:"0px",paddingBottom:"0px"}}>{props.title}</Card.Title>
 
   <Card.Body>

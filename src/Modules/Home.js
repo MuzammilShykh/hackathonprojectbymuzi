@@ -88,24 +88,24 @@ let cityArr = [{cityName:"Faisalabad", image:Faisalabad},{cityName:"Lahore", ima
   <hr/>
   <h1 style={{textAlign:"center"}}>POPULAR CUISINES</h1> <br/>
   <Row>
-  <Col></Col>
-        <Col lg={2} md={2}>< FoodProducts title="BBQ" src={img4}/> </Col>
-        <Col lg={2} md={2}>< FoodProducts title="Appetizers" src={img5}/></Col>
-        <Col lg={2} md={2}>< FoodProducts title="Chinese" src={img6}/></Col>
-        <Col lg={2} md={2}>< FoodProducts title="Desserts" src={img7}/></Col>
-        <Col lg={2} md={2}>< FoodProducts title="Drinks" src={img8}/></Col>
-        <Col></Col>
+  
+        <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="BBQ" src={img4}/> </Col>
+        <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Appetizers" src={img5}/></Col>
+        <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Chinese" src={img6}/></Col>
+        <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Desserts" src={img7}/></Col>
+        <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Drinks" src={img8}/></Col>
+      
        
-  </Row>
-  <br/>
-  <Row>
-  <Col></Col>
-    <Col lg={2} md={2} sm={12} xs={12}>< FoodProducts title="Fast Food" src={img9}/> </Col>
-    <Col lg={2} md={2} sm={12} xs={12}>< FoodProducts title="Pakistani" src={img10}/></Col>
-    <Col lg={2} md={2} sm={12} xs={12}>< FoodProducts title="Pizza" src={img11}/></Col>
-    <Col lg={2} md={2} sm={12} xs={12}>< FoodProducts title="Salads" src={img12}/></Col>
-    <Col lg={2} md={2} sm={12} xs={12}>< FoodProducts title="Sandwish" src={img13}/></Col>
-    <Col></Col>
+  
+  <br/><br/>
+  
+
+    <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Fast Food" src={img9}/> </Col>
+    <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Pakistani" src={img10}/></Col>
+    <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Pizza" src={img11}/></Col>
+    <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Salads" src={img12}/></Col>
+    <Col lg={3} md={4} sm={12} xs={12}>< FoodProducts title="Sandwish" src={img13}/></Col>
+   
 </Row>
 <hr/>
 

@@ -68,6 +68,54 @@ res.map((item)=>{
 
 
         </Container>
+
+
+
+        <Container style={{marginTop:"5%",marginBottom:"5%"}}>
+            <h1 style={{fontWeight:"700",fontSize:"32px",color:"#333333"}}>Food Delivery in Karachi From Only The Best Restaurants</h1>
+            <p style={{fontWeight:"300" ,fontSize:"14px"}}>For those who like good food, exciting new options are now available in Karachi. Whether you live in Karachi, or are simply enjoying a holiday in the area, culinary delights aplenty are now just a simple online order away. The Karachi food delivery service has enjoyed a culinary renaissance in recent years, with a blossoming of new restaurants and take away eateries on almost every street; in fact, there are now literally hundreds of restaurants in Karachi, and foodpanda.com is the fastest, easiest and most reliable way of locating and ordering from the outlet of your choice. And whether you're in the mood for some comfortably familiar flavours, or fancy sampling some excitingly exotic dish,
+             the meal of your choice is now just a few button clicks away, delivered fresh and piping hot to your door.</p>
+       
+       <h1  style={{fontWeight:"700",fontSize:"32px",color:"#333333"}}>Why food delivery from foodpanda?</h1>
+      
+
+       
+       <p style={{fontWeight:"300" ,fontSize:"14px"}}>
+       Our team of experts have paid a visit to every restaurant you’ll find here, and checked they’re up to our strict standards -
+        only Karachi's most beloved spots are here to order from. Quickly place and pay for your order online, and find your food delivered straight to your door in no time at all.
+
+
+       </p>
+
+       <h1  style={{fontWeight:"700" ,fontSize:"32px",color:"#333333"}}>Discover the Best Restaurants in Karachi</h1>
+       <p style={{fontWeight:"300" ,fontSize:"14px"}}>
+       Let us do the hard part of entertaining and bring the food right to you and your friends. Alternatively if you need to organize some 
+       catering for your co-workers, are working late, or want to treat the team, you can conveniently order straight to your office.
+       </p>
+
+
+      
+        </Container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </>
     )
 }
