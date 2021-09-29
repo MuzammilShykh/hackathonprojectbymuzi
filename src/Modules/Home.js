@@ -26,11 +26,15 @@ import Faisalabad from "../Assets/cities & restourants/Faisalabad.jpg";
 import Lahore from "../Assets/cities & restourants/Lahore.jpg";
 import Karachi from "../Assets/cities & restourants/Karachi.jpg";
 import Islamabad from "../Assets/cities & restourants/Islamabad.jpg";
+import { useSelector } from "react-redux";
+
+
 export default function Home() {
 
 let cityArr = [{cityName:"Faisalabad", image:Faisalabad},{cityName:"Lahore", image:Lahore },{ cityName:"Karachi" ,image:Karachi},{cityName:"Islamabad" ,image:Islamabad}]
 
 
+const authState = useSelector(state => state.AuthReducer.isUserLoggedIn)
 
     return (
         <>
@@ -82,7 +86,10 @@ let cityArr = [{cityName:"Faisalabad", image:Faisalabad},{cityName:"Lahore", ima
   <Row>
       <Col> <div style={{textAlign:"center"}}> 
           <h1>ORDER IT AGAIN</h1> <br/>
-          <p style={{fontSize:"24px",color:"grey"}}><a href="#login" style={{color:"red",textDecoration:"none"}}>Login</a> to see recently ordered restaurants</p>
+          {authState?  <p style={{fontSize:"24px",color:"grey"}}> See recently ordered restaurants</p>:
+          
+          <p style={{fontSize:"24px",color:"grey"}}><a href="/login" style={{color:"red",textDecoration:"none"}}>Login</a> to see recently ordered restaurants</p>}
+         
           </div></Col>
 
   </Row>
