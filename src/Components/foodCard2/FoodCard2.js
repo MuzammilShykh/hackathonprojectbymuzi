@@ -6,7 +6,7 @@ import {
   
 export default function FoodCard2(item) {
 const [to,setTo] = useState("")
-    console.log(item.item.cityName);
+    // console.log(item.item.cityName);
     const ctaHandler= ()=>{
       
 switch (item.item.cityName) {

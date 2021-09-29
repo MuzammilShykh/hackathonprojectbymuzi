@@ -59,7 +59,7 @@ export default function Header() {
 
              
 
-              {authState ? <button style={{ color: "#E8AB16", backgroundColor: "#212529",width:"150px"  }} onClick={doUserLogout}>Logout Now</button> : <NavLink  style={{textDecoration:"none",color: "#939597",paddingTop:"3%"}} to="/login"> <button style={{ color: "#E8AB16", backgroundColor: "#212529" ,width:"150px" }}>Login</button> </NavLink>}
+              {authState ? <button style={{ color: "#E8AB16", backgroundColor: "#212529",width:"150px"  }} onClick={doUserLogout}>Logout Now</button> : <button style={{ color: "#E8AB16", backgroundColor: "#212529" ,width:"150px" }}> <NavLink  style={{textDecoration:"none",color: "#E8AB16",paddingTop:"3%"}} to="/login"> Login </NavLink> </button>}
 
 
               {/* </Nav.Link> */}

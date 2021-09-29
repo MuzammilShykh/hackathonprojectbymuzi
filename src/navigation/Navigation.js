@@ -6,23 +6,30 @@ import SignUp from "../Components/loginSignup/SignUp";
 import Help from "../Modules/Help";
 import PrivateRouting from "./PrivateRouting";
 import PublicRouting from "./PublicRouting";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import AddRestaurant from "../Modules/AddRestaurant";
 import Faisalabad from "../Modules/cities/Faisalabad";
 import Lahore from "../Modules/cities/Lahore";
 import Karachi from "../Modules/cities/Karachi";
 import Islamabad from "../Modules/cities/Islamabad";
+import About from "../Modules/About";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import { useState } from "react";
 
-export default function Navigation(params) {
+export default function Navigation(props) {
 
-  const authState = useSelector(state => state.AuthReducer.isUserLoggedIn)
-  console.log(authState);
+ 
+
+
+  let authState = useSelector(state => state.AuthReducer.isUserLoggedIn)
+
+console.log(authState);
+ 
     return(
 
 <Router>
@@ -46,7 +53,7 @@ export default function Navigation(params) {
 
 
         <PrivateRouting path="/aboutus" auth={authState}>
-       <h1>ABOUT US</h1>
+       <About/>
         </PrivateRouting>
 
 

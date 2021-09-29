@@ -17,7 +17,7 @@ const initialState = {
         // if user login than what?
              return {
                  ...state,
-                isUserLoggedIn:  true,
+                isUserLoggedIn: action.payload,
                 user: action.payload
              };
          }

@@ -1,0 +1,118 @@
+.carousal-caption{
+    margin-bottom: 15% ;
+    text-align: left;
+}
+
+
+
+.carousal-caption-h1{
+    font-size: 48px ;
+    font-weight: 300;
+    color: #fff;
+}
+
+.carousal-caption-p{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+@media only screen and (max-width: 600px) {
+.carousal-caption-h1{
+    font-size: 24px ;
+}
+
+.carousal-caption-p{
+    font-size: 12px;
+    
+}
+
+.carousal-caption{
+    margin-bottom: 5px ;
+    text-align: left;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .carousal-caption-h1{
+        font-size: 32px ;
+    }
+    
+    .carousal-caption-p{
+        font-size: 18px;
+        
+    }
+    
+    .carousal-caption{
+        margin-bottom: 20px ;
+        text-align: left;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .carousal-caption-h1{
+        font-size: 36px ;
+    }
+    
+    .carousal-caption-p{
+        font-size: 22px;
+        
+    }
+    
+    .carousal-caption{
+        margin-bottom: 70px ;
+        text-align: left;
+    }
+
+
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .carousal-caption-h1{
+        font-size: 44px ;
+    }
+    
+    .carousal-caption-p{
+        font-size: 24px;
+        
+    }
+    
+    .carousal-caption{
+        margin-bottom: 120px ;
+        text-align: left;
+    }
+
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .carousal-caption-h1{
+        font-size: 52px ;
+    }
+    
+    .carousal-caption-p{
+        font-size: 24px;
+        
+    }
+    
+    .carousal-caption{
+        margin-bottom: 250px ;
+        text-align: left;
+    }
+
+
+
+}
